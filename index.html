@@ -1,10 +1,183 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="./static/style.css"
-  </head>
-  <body>
-<h1>home</h1>
-<p>This is home.</p>
-    </body>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- css 실험중 -->
+  <link href="style2.css" rel="stylesheet" type="text/css">
+  <style>
+    body {background-color: #240900;}
+    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+
+<body>
+   <body style="background-color: #999999;">
+  <header>
+    <div id="main logo">
+      <h1>
+      <img src="logo.jpg" width="200"/>
+        </h1>
+    </div>
+    <nav>
+  <ul>
+    <li><a href="/">홈</a></li>
+    <li><a href="/">베스트</a></li>
+    <li><a href="https://www.google.com/" target="_blank">MY페이지</a></li>
+  </ul>
+    </nav>
+
+  </header>
+  <main style="width: 500px; margin: 0 auto;"> 
+    <section>
+      <article id = "top"></article>
+      <h1>웃긴게시글</h1>
+    <article id = "article1">
+  <h1>아저씨 우채국 어디있는지 아세요?</h1>
+    <p class="p-thin p-larger">ㅇㅇ 알어</p>
+    <p class="p-normal p-align">어떻게 가는지 아세요?</p>
+    <p class="p-bold p-smaller">ㅇㅇ 암</p>
+      <p class="p-linebr p-justify long-text">
+        행정각부의 설치·조직과 직무범위는 법률로 정한다. 모든 국민은 통신의 비밀을 침해받지 아니한다. 원장은 국회의 동의를 얻어 대통령이 임명하고, 그 임기는 4년으로 하며, 1차에 한하여 중임할 수 있다. 국회는 국가의 예산안을 심의·확정한다. 국가는 건전한 소비행위를 계도하고 생산품의 품질향상을 촉구하기 위한 소비자보호운동을 법률이 정하는 바에 의하여 보장한다.
+      </p>
+      </article>
+      <article id = "article2">
+    <h1>남남수 수학학원원장장기기증증서서명명단단체체결결사반대</h1>
+      <p>남남수가 운영하는 수학 학원의 원장에 대해</p>
+      <p>장기 기증 증서 서명 단체가</p>
+      <p>체결 결사 반대 해 논란</p>
+        </article>
+      </section>
+    <section>
+      <h2>Q&A</h2>
+      <details>
+        <summary>님 몇살임?</summary>
+        <p>알려드렸습니다^^</p>
+      </details>
+      <details open>
+        <summary>님 맞을래요?</summary>
+<ul>
+        <li>아니요^^</li>
+        <li>그럴리가요^^</li>
+  </ul>
+      </details>
+    </section>
+    <section>
+      <h3>월별 베스트 게시글</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>1월</th>
+            <th>2월</th>
+            <th>3월</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>남남수</td>
+            <td>우채국 아저씨</td>
+            <td>설날 특집</td>
+          </tr>
+          <tr>
+            <td rowspan="2">수학학원원장 논란
+            <td>아세요?</td>
+            <td>게시물 3개</td>
+          </tr>
+          <tr>
+            <td>ㅇㅇ 알어</td>
+            <td>종합모음집</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="2">조회수 합계</td>
+            <td>1,653,436회</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+    <!-- form  -->
+    <section>
+     <form action="/signup" method="post">
+       <p>닉네임</p>
+       <input name="username" type="text" maxlength="10">
+       <datalist id="name">
+         <!-- 아이디는 이걸로밖에 못만듦 -->
+         <option value="남남수"></option>
+       </datalist>
+       <label for="u-email">이메일</label>
+       <input id="u-email" name="email" type="email" maxlength="20">
+       <label for="u-pw">비밀번호</label>
+       <input id="u-pw" name="password" type="password" maxlength="20"">
+       <label for="u-birth">생년월일</label>
+       <input id="u-birth" name="birthday" type="data">
+       <input type="submit">
+       <button type="reset">촉이와(초기화라는 뜻)</button>
+     </form>
+    </section>
+    <style>
+      .div-square {
+        width: 30px;
+        height: 30px;
+      }
+      .sq-pd {
+        padding: 10px 20px 30px 40px;
+        padding-top: 30px;
+      }
+      .sq-mg {
+        margin: 10px 20px 30px 40px;
+        margin-top: 30px;
+      }
+      .div-center {
+        margin: 0px auto;
+        width: 25%;
+      }
+    </style>
+    <section>
+      <div class="div-square sq-pd" style="background-color: yellow;">1</div>
+      <div class="div-square sq-pd sq-mg" style="background-color: green;">2</div>
+      <div class="div-square" style="background-color: blue;">3</div>
+      <div class="div-square div-center" style="background-color: purple;">4</div>
+    </section>
+    <style>
+     .flex-container {
+     display: flex;
+     width:266px;
+     height: 120px;
+     /* flex-direction: row;
+     flex-wrap: nowrap; */
+     flex-flow: column nowrap;
+     }
+     .flex-box {width: 100px; height:100px; text-align:center;}
+     .bg-red {background-color: red;}
+     .bg-blue {background-color: blue;}
+     .bg-gray {background-color: gray;}
+    </style>
+    <section class="flex-container">
+     <article class="flex-box bg-red">1</article>
+     <article class="flex-box bg-blue">2</article>
+     <article class="flex-box bg-gray">3</article>
+    </section>
+  </main>
+  <aside>
+    <h3>다른 게시글</h3>
+    <ul>
+      <li><a href="#article1">박승철(38) 세뱃돈 장기자랑 참가해...</a></li>
+      <li><a href="#article2">임혜수(45) 제삿상 술로 사케 구매해...</a></li>
+      <li><a href="#top">위로가기</a></li>
+    </ul>
+
+  </aside>
+
+     <footer class="bg-gray-800 text-white py-4">
+      <div class="container mx-auto text-center">
+      <p>&copy; 국민대 경영대학원 디지털마케팅전공</p>
+      </div>
+     </footer>
+</body>
+
 </html>
